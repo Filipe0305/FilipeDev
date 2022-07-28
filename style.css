@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* barra */
+.maxwidth{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.barra {
+    width: 100%;
+    position: fixed;
+    padding: 15px 0;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.barra.sticky {
+    background: rgb(75, 51, 132);
+    padding: 15px 0;
+}
+
+
+.maxwidth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.titulo a {
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.titulo span {
+    color: rgb(75, 51, 132);
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu li a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.menu li a:hover {
+    color: black;
+    
+}
+
+/* home */
+
+.home {
+    display: flex;
+    background: url(image5.jfif);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color:rgb(73, 43, 145) ;
+    font-weight: 500;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: rgb(75, 51, 132);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(75, 51, 132);
+}
+.home .home-content a:hover{
+    color: rgb(75, 51, 132);
+    background: none;
+}
+
+/* about */
+
+.about {
+    background: rgba(36, 36, 160, 0.6);
+    height: 100vh;
+    min-height: 500px;
+}
+
+.about .titulo {
+    color: rgb(75, 51, 132);
+    font-size: 40px;
+}
+
+.about .maxwidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* specialties */
+
+.skills{
+    height: 100vh;
+    min-height: 500px;
+}
+
+
+.services, .teams{
+    background: #111;
+    color: #fff;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    background: #111;
+    content: "Que oferecemos";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: rgb(75, 51, 132);
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card ion-icon{
+    font-size: 70px;
+    color: rgb(75, 51, 132);
+}
+.services .serv-content .card:hover ion-icon{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/*  sessão especialidades  */
+.skills .title::after{
+    content: "Que faço";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: rgb(75, 51, 132);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(75, 51, 132);
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: rgb(75, 51, 132);
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(75, 51, 132);
+}
+.skills .skills-content .right .html::before{
+    width: 80%;
+}
+.skills .skills-content .right .css::before{
+    width: 75%;
+}
+.skills .skills-content .right .js::before{
+    width: 83%;
+}
+.skills .skills-content .right .react::before{
+    width: 47%;
+}
+.skills .skills-content .right .python::before{
+    width: 82%;
+}
+
+
+/*projects */
+
+.projects {
+    background: rgba(0, 0, 0, 0.866);
+    height: 100vh;
+    min-height: 500px;
+}
+/* codigo similirares */
+
+section{
+    padding: 100px 0;
+}
+
+
+
